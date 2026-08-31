@@ -77,10 +77,10 @@ Copy the provided .env.example file to create a new .env file in the root direct
 
 ## 🤖 AI Assistant Disclosure
 
-*AI coding assistants were used as a supporting development tool during this*
-*project to help debug issues, explore solutions, refine implementation details,*
-*and structure technical documentation. All relevant suggestions were reviewed,*
-*adapted, integrated, and tested as part of the development process.*
+**AI coding assistants were used as a supporting development tool during this**
+**project to help debug issues, explore solutions, refine implementation details,**
+**and structure technical documentation. All relevant suggestions were reviewed,**
+**adapted, integrated, and tested as part of the development process.**
 
 ### 🔄 Development Pipeline
 
