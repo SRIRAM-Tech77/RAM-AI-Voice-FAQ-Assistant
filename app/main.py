@@ -16,7 +16,7 @@ if str(ROOT_DIR) not in sys.path:
 try:
     from app.services.audio_pipeline import transcribe_audio, answer_from_text, generate_speech
 except ModuleNotFoundError:
-    from services.audio_pipeline import transcribe_audio, answer_from_text, generate_speech
+    from app.services.audio_pipeline import transcribe_audio, answer_from_text, generate_speech
 
 app = FastAPI()
 
