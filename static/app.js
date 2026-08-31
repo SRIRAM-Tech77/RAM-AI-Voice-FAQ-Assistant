@@ -68,7 +68,10 @@ function showStatus(title, description = "") {
     if (statusDescription) statusDescription.innerText = description;
     if (statusContainer) statusContainer.classList.remove("hidden");
 }
-function hideStatus() { if (statusContainer) statusContainer.classList.add("hidden"); }
+
+function hideStatus() {
+    if (statusContainer) statusContainer.classList.add("hidden");
+}
 
 function setListeningState(listening) {
     isListening = listening;
@@ -246,4 +249,24 @@ if (SpeechRecognition) {
         showStatus("Microphone Error", "Please verify microphone permissions.");
         setTimeout(hideStatus, 2000);
     };
+}
+
+// THE ONE AND ONLY FAQ CLICK HANDLER
+function sendQuickFAQ(question) {
+    const inputField = document.getElementById('textInput');
+    const sendButton = document.getElementById('textActionBtn');
+
+    if (inputField && sendButton) {
+        // 1. Set the text
+        inputField.value = question;
+
+        // 2. Dispatch events so the UI knows the text actually changed
+        inputField.dispatchEvent(new Event('input', { bubbles: true }));
+        inputField.dispatchEvent(new Event('change', { bubbles: true }));
+
+        // 3. Small timeout to allow state update before firing click
+        setTimeout(() => {
+            sendButton.click();
+        }, 50);
+    }
 }

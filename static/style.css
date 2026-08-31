@@ -27,17 +27,12 @@ body {
     font-family: 'Inter', sans-serif;
     background: #eef3f8;
     color: #1e293b;
-
-    /* SCROLL FIX: Forces page to be taller than screen with massive space */
     min-height: 130vh;
     display: flex;
     justify-content: center;
     align-items: flex-start;
-    /* Prevents the dashboard from getting trapped in the center */
-    padding: 10vh 1rem 15vh;
-    /* Adds thick background space to scroll through */
+    padding: 8vh 1rem 12vh;
     overflow-y: scroll;
-
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
 }
@@ -45,7 +40,7 @@ body {
 /* Dashboard Setup */
 .dashboard-border-flow {
     width: 100%;
-    max-width: 880px;
+    max-width: 850px;
     border-radius: 20px;
     padding: 1.5px;
     background: linear-gradient(90deg, #3b82f6, #ec4899, #8b5cf6, #3b82f6);
@@ -69,6 +64,7 @@ body {
     border-radius: 19px;
     padding: 32px 40px;
     width: 100%;
+    min-height: 80px;
 }
 
 .app-header {
@@ -160,7 +156,7 @@ body {
 
 textarea {
     width: 100%;
-    min-height: 140px;
+    min-height: 80px;
     background: #ffffff;
     border-radius: 12.5px;
     border: none;
@@ -271,6 +267,51 @@ textarea {
     100% {
         transform: scale(1);
     }
+}
+
+/* --- QUICK FAQ SECTION --- */
+.faq-section {
+    width: 100%;
+    margin: 15px 0 25px 0;
+}
+
+.faq-quick-container {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+    width: 100%;
+}
+
+.faq-header {
+    color: #334155;
+    /* Dark text for visibility */
+    font-size: 0.95rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+}
+
+.faq-btn {
+    background: rgba(246, 59, 59, 0);
+    /* Very light blue background */
+    border: 1px solid rgba(0, 23, 174, 0.821);
+    /* Thin crisp border */
+    border-radius: 8px;
+    color: #000000;
+    /* Solid Black text */
+    padding: 8px 10px;
+    font-size: 0.82rem;
+    font-weight: 500;
+    cursor: pointer;
+    text-align: left;
+    transition: all 0.25s ease-in-out;
+}
+
+.faq-btn:hover {
+    background: rgba(59, 130, 246, 0.1);
+    border-color: rgba(59, 130, 246, 0.8);
+    box-shadow: 0 0 8px rgba(59, 130, 246, 0.3);
+    /* Subtle, thin glow on hover */
+    transform: translateY(-1px);
 }
 
 /* Status Loader */
@@ -406,7 +447,6 @@ textarea {
     border-color: #3b82f6;
 }
 
-/* Aesthetic Green Copied State */
 .copy-btn.copied-state {
     background: rgba(16, 185, 129, 0.15) !important;
     color: #059669 !important;

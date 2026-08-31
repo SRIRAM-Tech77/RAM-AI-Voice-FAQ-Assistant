@@ -1,0 +1,17 @@
+Q: What is NxtWave Academy Program?
+A: NxtWave Academy is a long-term learning program designed for college students in their 1st to 3rd year to build AI, full-stack development, and coding skills alongside their academics, offering internship opportunities before graduation.
+
+Q: What is Intensive Training Program?
+A: NxtWave Intensive is a rigorous 8-month bootcamp-style program designed for final-year students, graduates, or career switchers who want quick job preparation. It requires 6+ hours of daily commitment and focuses on fast career transitions into tech.
+
+Q: What is CCBP 4.0?
+A: CCBP 4.0 (Continuous Career Building Programs) is NxtWave's structured learning pathway that trains youth in 4.0 technologies like Artificial Intelligence, Full-Stack Development (MERN/Java), and Machine Learning to make them highly skilled professionals.
+
+Q: What is the difference between Smart and Genius track in NxtWave Academy?
+A: Smart Track focuses on AI-enabled Full Stack Development (Python, React, Node.js). Genius Track covers everything in Smart Track but adds deeper expertise in Machine Learning, Data Science, and production-grade AI systems.
+
+Q: Are there any scholarships available?
+A: Yes, eligible learners can avail scholarships. For example, Intensive program students can get up to 80% scholarships by performing well in the NxtWave Intensive Scholarship Test (NIST).
+
+Q: Do they provide placement support?
+A: Yes, NxtWave offers placement preparation including resume-building, mock interviews, and access to a network of over 3000 hiring companies, though securing a job ultimately depends on the learner's interview performance.
