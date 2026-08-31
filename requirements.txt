@@ -1,9 +1,6 @@
-fastapi 
-TXT  
-uvicorn[standard]
-TXT
+fastapi
+uvicorn
 python-dotenv
-TXT 
-python-multipart 
-TXT
-google-generativeaiSpeechRecognitiongTTSS
+python-multipart
+google-generativeai
+edge-tts
