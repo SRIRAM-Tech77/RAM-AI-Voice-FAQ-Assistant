@@ -1,0 +1,9 @@
+fastapi 
+TXT  
+uvicorn[standard]
+TXT
+python-dotenv
+TXT 
+python-multipart 
+TXT
+google-generativeaiSpeechRecognitiongTTSS

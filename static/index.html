@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RAM AI - College Voice FAQ Assistant</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+
+    <div class="dashboard-border-flow">
+        <main class="main-dashboard">
+
+            <header class="app-header">
+                <h1 class="brand-title">
+                    <span class="sparkle-icon floating-star">✦</span>
+                    <span class="animated-gradient-text">RAM AI</span>
+                </h1>
+                <h2 class="app-subtitle">College Voice FAQ Assistant</h2>
+                <p class="app-description">
+                    I'm your human-friendly AI assistant. Ask me anything about campus, courses, or admissions.
+                </p>
+            </header>
+
+            <section class="input-section">
+                <div class="textarea-wrapper" id="textareaContainer">
+                    <textarea id="textInput" placeholder="Ask your question here..."></textarea>
+                    <button id="textActionBtn" class="floating-send-btn" aria-label="Send query">
+                        <i class="fa-solid fa-paper-plane"></i>
+                    </button>
+                </div>
+            </section>
+
+            <section class="controls-section">
+                <div class="action-buttons">
+                    <button id="textBtn" class="btn btn-outline-blue">
+                        <i class="fa-solid fa-plus"></i> Ask via Text
+                    </button>
+                    <button id="recordBtn" class="btn btn-gradient-purple">
+                        <i id="micIcon" class="fa-solid fa-microphone"></i>
+                        <span id="recordBtnText">Speak Now</span>
+                    </button>
+                    <button id="clearBtn" class="btn btn-outline-red">
+                        <i class="fa-solid fa-rotate-right"></i> Clear
+                    </button>
+                </div>
+            </section>
+
+            <section id="statusContainer" class="status-section hidden">
+                <div class="status-glass-pill left-align-pill">
+                    <div class="loader-wave">
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                        <div class="wave-bar"></div>
+                    </div>
+                    <div class="status-text">
+                        <h4 id="statusText">Thinking...</h4>
+                        <p id="statusDescription">Processing your request.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="response-section">
+                <div class="response-card" id="responseCard">
+                    <div class="response-header">
+                        <h3 class="response-title">
+                            <span class="pink-star">✦</span>Response
+                        </h3>
+                        <button id="copyBtn" class="copy-btn" title="Copy to clipboard">
+                            <i class="fa-regular fa-copy"></i> Copy
+                        </button>
+                    </div>
+
+                    <div class="answer-wrapper">
+                        <p id="answerText" class="answer-content">Your answer will appear here...</p>
+                    </div>
+
+                    <div class="audio-response-box">
+                        <div class="audio-info">
+                            <div class="audio-icon-circle">
+                                <i class="fa-solid fa-volume-high"></i>
+                            </div>
+                            <div class="audio-meta">
+                                <h4>Voice Response</h4>
+                                <p>Play the audio below.</p>
+                            </div>
+                        </div>
+                        <audio id="audioPlayer" controls></audio>
+                    </div>
+                </div>
+            </section>
+
+            <footer class="app-footer">
+                <p class="tip-text">
+                    <i class="fa-regular fa-lightbulb tip-icon"></i>
+                    <strong>Tip:</strong> Speak clearly in a quiet environment for the best audio experience.
+                </p>
+                <p class="copyright-text">RAM AI - College Voice FAQ Assistant &copy; 2026</p>
+            </footer>
+
+        </main>
+    </div>
+
+    <script src="/static/app.js"></script>
+</body>
+
+</html>
