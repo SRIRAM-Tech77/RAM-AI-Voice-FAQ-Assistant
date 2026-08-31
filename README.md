@@ -47,10 +47,14 @@ Copy the provided .env.example file to create a new .env file in the root direct
 
 4. **Start the local server:**
    ```bash
-   python -m uvicorn app.main:app --reload
+   python -m uvicorn app.main:app --reload 
+   ```
+   **or**
+    ```bash
+   python -m uvicorn app.main:app --port 9090 
    ```
 
-5. **Open** `http://127.0.0.1:9090/` or `http://127.0.0.1:9090/`  in your browser and try it out.
+5. **Open** `http://127.0.0.1:8000/` or `http://127.0.0.1:9090/` in your browser and try it out.
 
 ## Architecture & Approach
 **Linear Pipeline**: The architecture intentionally keeps the pipeline simple and linear (Speech → STT → LLM → TTS → Audio) so the data flow remains highly visible and easy to debug.
