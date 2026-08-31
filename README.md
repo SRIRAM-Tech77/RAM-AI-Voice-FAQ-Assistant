@@ -5,7 +5,7 @@ A beginner-friendly, end-to-end AI voice assistant built for the **LLMs Meet Spe
 RAM AI integrates **Speech-to-Text (STT), Large Language Models (LLM), Retrieval-Augmented Generation (RAG), and Text-to-Speech (TTS)** into a single interactive application.
 
 The assistant provides **RAG-based answers about NxtWave Academy and its courses**, while also supporting **general questions across a wide range of topics**.
-**Live Deployment:** [https://ram-voice-assistant.onrender.com](https://ram-voice-assistant.onrender.com)
+**Live Deployment:** [https://ram-ai-voice-faq-assistant.onrender.com]
 
 ---
 
