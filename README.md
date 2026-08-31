@@ -1,4 +1,4 @@
-# RAM AI Voice FAQ Assistant — Speech → LLM → Speech
+# RAM AI Voice FAQ Assistant — LLM Meet Speech
 
 A beginner-friendly, end-to-end AI voice assistant built for the **LLMs Meet Speech — Take-Home Assessment**.
 
@@ -33,36 +33,36 @@ RAM AI allows users to communicate with the assistant through multiple input and
    git clone [https://github.com/SRIRAM-Tech77/RAM-AI-Voice-FAQ-Assistant.git](https://github.com/SRIRAM-Tech77/RAM-AI-Voice-FAQ-Assistant.git)
    cd Voice_Bot_project
 
-2. Install dependencies:
+2. **Install dependencies:**
    ```bash
    pip install -r requirements.txt
    ```
 
-3. Create the environment file:
+3. **Create the environment file:**
 Copy the provided .env.example file to create a new .env file in the root directory. Add your private API key:
    ```
    Gemini_API_KEY=your-real-key-here
    ```
-   Get a free key at console.groq.com/keys (no credit card required).
+   Get a free Gemini API key from **Google AI Studio**.(no credit card requided.)
 
-4. Start the local server:
+4. **Start the local server:**
    ```bash
    python -m uvicorn app.main:app --reload
    ```
 
-5. Open `http://127.0.0.1:9090/` in your browser and try it out.
+5. **Open** `http://127.0.0.1:9090/` or `http://127.0.0.1:9090/`  in your browser and try it out.
 
 ## Architecture & Approach
-Linear Pipeline: The architecture intentionally keeps the pipeline simple and linear (Speech → STT → LLM → TTS → Audio) so the data flow remains highly visible and easy to debug.
+**Linear Pipeline**: The architecture intentionally keeps the pipeline simple and linear (Speech → STT → LLM → TTS → Audio) so the data flow remains highly visible and easy to debug.
 
-Cost Optimization: By utilizing standard Web Speech APIs for STT and edge-tts for voice synthesis, the project relies on a single free API key (Google Gemini) to operate fully, completely bypassing expensive third-party TTS/STT services.
+**Cost Optimization**: By utilizing standard Web Speech APIs for STT and edge-tts for voice synthesis, the project relies on a single free API key (Google Gemini) to operate fully, completely bypassing expensive third-party TTS/STT services.
 
  ## Development Challenges
-Git & Terminal Configuration: Overcame initial PowerShell environment blocks and fatal: unable to auto-detect email address errors by restructuring global Git identity credentials and clearing hanging processes.
+**Git & Terminal Configuration**: Overcame initial PowerShell environment blocks and fatal: unable to auto-detect email address errors by restructuring global Git identity credentials and clearing hanging processes.
 
-Audio Buffer Codecs: Raw byte streaming from the backend to the frontend caused HTML5 player failures. Resolved this by saving temporary .webm/.mp3 files locally before serving them to the client browser.
+**Audio Buffer Codecs**: Raw byte streaming from the backend to the frontend caused HTML5 player failures. Resolved this by saving temporary .webm/.mp3 files locally before serving them to the client browser.
 
-Asynchronous UI Freezes: The "Bot is thinking" UI state occasionally broke during long LLM response times. Fixed this by implementing strict JavaScript promise chaining to handle asynchronous events smoothly without locking the Ui.
+**Asynchronous UI Freezes**: The "Bot is thinking" UI state occasionally broke during long LLM response times. Fixed this by implementing strict JavaScript promise chaining to handle asynchronous events smoothly without locking the Ui.
 
 ## 📌 Assumptions & Known Limitations
 
@@ -73,14 +73,14 @@ Asynchronous UI Freezes: The "Bot is thinking" UI state occasionally broke durin
 
 ## 🤖 AI Assistant Disclosure
 
-AI coding assistants were used as a supporting development tool during this
-project to help debug issues, explore solutions, refine implementation details,
-and structure technical documentation. All relevant suggestions were reviewed,
-adapted, integrated, and tested as part of the development process.
+*AI coding assistants were used as a supporting development tool during this*
+*project to help debug issues, explore solutions, refine implementation details,*
+*and structure technical documentation. All relevant suggestions were reviewed,*
+*adapted, integrated, and tested as part of the development process.*
 
 ### 🔄 Development Pipeline
 
-Issue → AI-Assisted Debugging → Implementation → Testing → Refinement
+**Issue → AI-Assisted Debugging → Implementation → Testing → Refinement**
 
 ### 🛠️ Assistance Areas
 
